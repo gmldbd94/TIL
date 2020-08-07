@@ -139,6 +139,121 @@
 
 - 외부망에 접근하기 위해 배정받는 IP
 
+
+
+
+
+## 2020-08-07 추가 내용
+
+![OpenStack conceptual architecture](https://docs.openstack.org/install-guide/_images/openstack_kilo_conceptual_arch.png)
+
+## OpenStack Services
+
+### Compute
+
+- [**NOVA**](#NOVA)
+  - Compute Service
+- [**ZUM**](#ZUM)
+  - Containers Service
+- **[QINLING](QINLING)**
+  - Functions Service
+
+### Hardware Lifecycle
+
+- **[IRONIC](IRONIC)**
+  - Bare Metal Provisioning Service
+- [**CYBOBG**](CYBOBG)
+  - Lifecycle management of accelerators
+
+### Stroage
+
+- [**SWIFT**](SWIFT) 
+  - object store
+- **[CINDER](CINDER)**
+  - Block Storage
+- **[MANILA](MANILA)**
+  - Shared filesystems
+
+### Networking
+
+- **[NEUTRON](NEUTRON)**
+  - Networking
+- **[OCTAVIA](OCTAVIA)**
+  - Load balancer
+- **[DESIGNATE](#DESIGNATE)**
+  - DNS service
+
+### Shared Services
+
+- **[KEYSTONE](##keystone)**
+  - Identity service
+- [**PLACEMENT**](#PLACEMENT)
+  - Placement service
+- **[GLANCE](GLANCE)**
+  - Image service
+- [**BARBICAN**](#BARBICAN)
+  - key management
+- **[KARBOR](#KARBOR)**
+  - Application Data Protection
+- **[SEARCHLIGTH](#SEARCHLIGTH)**
+  - indexing and Search
+
+### Orchestration
+
+- [**HEAT**](#HEAT)
+  - Orchestration
+- **[SENLIN](#SENLIN)**
+  - Clustering service
+
+- **[MISTRAL](#MISTRAL)**
+  - Workflow service
+- [**ZAQAR**](# ZAQAR)
+  - Messaging Service
+- **BLAZAR**
+  - Resource reservation service
+- AODH
+  - Alarming Service
+
+### Workload provisioning
+
+- MAGNUM
+  - Container Orchestration Engine Provisioning
+- SAHARA
+  - Big Data Processing Framework Provisioning
+- TROVE
+  - Database as a Service
+
+### Application Lifecycle
+
+- MASAKARI
+  - Instances High Avialability Service
+- MURANO
+  - Application Catalog
+- SOLUM
+  - Software Development Lifecycle Automation
+- FREEZER
+  - Backup, Restore, and Disaster Recovery
+
+### API Proxies
+
+- EC2API
+  - EC2 API proxy
+
+### WEB Frontend
+
+- HORIZON
+  - Dashboard
+
+
+
+
+
+
+
+
+
+
+
 ## 실습
 
 ### 오픈스택 설치
